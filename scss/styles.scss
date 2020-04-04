@@ -1,0 +1,101 @@
+// variables 
+$Desaturated-Red: hsl(0, 36%, 70%);
+$Soft-Red: hsl(0, 93%, 68%);
+$Dark-Grayish-Red: hsl(0, 6%, 24%);
+$gradient-1: linear-gradient(135deg,hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+$gradient-2: linear-gradient(135deg,hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+}
+
+.container {
+    display: flex;    
+}
+
+.text-section {
+    height: 100vh;
+    flex: 1.4;
+    background-image: url('/images/bg-pattern-desktop.svg');
+    background-size: cover;
+
+    h1 {
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 60px;
+        letter-spacing: 10px;
+        margin-top: 80px;
+        color: $Dark-Grayish-Red;
+        line-height: 1.2;
+
+        .red-text {
+            font-size: 60px;
+            font-weight: 200;
+            letter-spacing: 10px;
+            color: $Desaturated-Red;
+        }
+    }
+}
+
+.img-section {
+    height: 100vh;
+    flex: 1;
+    background-image: url('/images/hero-desktop.jpg');
+    background-size: cover;
+}
+
+.main {
+    margin: 9.5% 20%;
+
+    p {
+        line-height: 27px;
+        margin: 40px 0;
+        color: $Desaturated-Red;
+    }
+}
+
+form {
+    position: relative;
+
+    input {
+        background-color: transparent;
+        width: 100%;
+        height: 55px;
+        padding: 15px 30px;
+        border-radius: 50px;
+        border: 2px solid $Desaturated-Red;
+
+        &::placeholder {
+            color: $Desaturated-Red;
+        }
+    }
+
+    button {
+        background-image: $gradient-2;
+        border: none;
+        border-radius: 50px;
+        height: 55px;
+        padding: 15px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100px;
+    }
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+ 
+    a { color: hsl(228, 45%, 44%);
+    
+    }
+}

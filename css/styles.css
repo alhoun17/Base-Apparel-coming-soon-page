@@ -1,0 +1,111 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 16px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.text-section {
+  height: 100vh;
+  -webkit-box-flex: 1.4;
+      -ms-flex: 1.4;
+          flex: 1.4;
+  background-image: url("/images/bg-pattern-desktop.svg");
+  background-size: cover;
+}
+
+.text-section h1 {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 60px;
+  letter-spacing: 10px;
+  margin-top: 80px;
+  color: #413a3a;
+  line-height: 1.2;
+}
+
+.text-section h1 .red-text {
+  font-size: 60px;
+  font-weight: 200;
+  letter-spacing: 10px;
+  color: #ce9797;
+}
+
+.img-section {
+  height: 100vh;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background-image: url("/images/hero-desktop.jpg");
+  background-size: cover;
+}
+
+.main {
+  margin: 9.5% 20%;
+}
+
+.main p {
+  line-height: 27px;
+  margin: 40px 0;
+  color: #ce9797;
+}
+
+form {
+  position: relative;
+}
+
+form input {
+  background-color: transparent;
+  width: 100%;
+  height: 55px;
+  padding: 15px 30px;
+  border-radius: 50px;
+  border: 2px solid #ce9797;
+}
+
+form input::-webkit-input-placeholder {
+  color: #ce9797;
+}
+
+form input:-ms-input-placeholder {
+  color: #ce9797;
+}
+
+form input::-ms-input-placeholder {
+  color: #ce9797;
+}
+
+form input::placeholder {
+  color: #ce9797;
+}
+
+form button {
+  background-image: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+  border: none;
+  border-radius: 50px;
+  height: 55px;
+  padding: 15px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=styles.css.map */
